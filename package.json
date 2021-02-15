@@ -9,8 +9,8 @@
     "backend": "nodemon Backend/Server",
     "frontend": "npm start --prefix Frontend",
     "both": "concurrently \"npm run frontend\" \"npm run backend\"",
-    "data:import" : "node Backend/seeder",
-    "data:destroy" : "node Backend/seeder -d"
+    "data:import": "node Backend/seeder",
+    "data:destroy": "node Backend/seeder -d"
   },
   "author": "Shahzaib",
   "license": "ISC",
