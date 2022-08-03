@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Product from '../Components/Product';
 import { Row, Col } from 'react-bootstrap';
@@ -20,7 +20,7 @@ const HomeScreen = () => {
       {loading ? (
         <Loader />
       ) : error ? (
-        <Message>{error}</Message>
+        <Message>{'Something went wrong'}</Message>
       ) : (
         <Row>
           {products.map((product) => (

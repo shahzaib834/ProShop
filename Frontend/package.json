@@ -1,8 +1,9 @@
 {
   "name": "pro-shop",
-  "proxy": "http://127.0.0.1:5000",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://127.0.0.1:5000",
+  "homepage": "https://shahzaib834.github.io/ProShop",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
@@ -21,6 +22,8 @@
     "web-vitals": "^1.1.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

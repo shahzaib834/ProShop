@@ -7,13 +7,13 @@ import ProductRoutes from './routes/productRoutes.js';
 import connectDB from './config/db.js';
 
 const app = express();
-connectDB();
+//connectDB();
 dotenv.config();
 
-app.use(express.json()) 
+app.use(express.json());
 
 app.use('/api/products', ProductRoutes);
-app.use('/api/users' , userRoutes);
+app.use('/api/users', userRoutes);
 
 app.listen(
   process.env.PORT,
