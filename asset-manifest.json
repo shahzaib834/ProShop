@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ProShop/static/css/main.f5476e26.chunk.css",
+    "main.js": "/ProShop/static/js/main.5a520b1c.chunk.js",
+    "main.js.map": "/ProShop/static/js/main.5a520b1c.chunk.js.map",
+    "runtime-main.js": "/ProShop/static/js/runtime-main.772a97e1.js",
+    "runtime-main.js.map": "/ProShop/static/js/runtime-main.772a97e1.js.map",
+    "static/js/2.dbc551b0.chunk.js": "/ProShop/static/js/2.dbc551b0.chunk.js",
+    "static/js/2.dbc551b0.chunk.js.map": "/ProShop/static/js/2.dbc551b0.chunk.js.map",
+    "static/js/3.1dacae0b.chunk.js": "/ProShop/static/js/3.1dacae0b.chunk.js",
+    "static/js/3.1dacae0b.chunk.js.map": "/ProShop/static/js/3.1dacae0b.chunk.js.map",
+    "index.html": "/ProShop/index.html",
+    "static/css/main.f5476e26.chunk.css.map": "/ProShop/static/css/main.f5476e26.chunk.css.map",
+    "static/js/2.dbc551b0.chunk.js.LICENSE.txt": "/ProShop/static/js/2.dbc551b0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.772a97e1.js",
+    "static/js/2.dbc551b0.chunk.js",
+    "static/css/main.f5476e26.chunk.css",
+    "static/js/main.5a520b1c.chunk.js"
+  ]
+}
