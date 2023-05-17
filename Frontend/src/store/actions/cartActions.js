@@ -1,11 +1,10 @@
 import axios from 'axios';
 import { CART_ADD_ITEMS, CART_REMOVE_ITEMS } from './types';
+import { BASE_URL } from '../../constants/config';
 
 export const addToCart = (id, qty) => async (dispatch, getState) => {
   try {
-    const { data } = await axios.get(
-      `https://proshop8.herokuapp.com/api/products/${id}`
-    );
+    const { data } = await axios.get(`${BASE_URL}/products/${id}`);
 
     dispatch({
       type: CART_ADD_ITEMS,

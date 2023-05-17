@@ -1,5 +1,6 @@
 import express from 'express';
 import dotenv from 'dotenv';
+import cors from 'cors';
 
 import userRoutes from './routes/userRoutes.js';
 import ProductRoutes from './routes/productRoutes.js';
@@ -11,6 +12,7 @@ const app = express();
 // Database Connection
 connectDB();
 dotenv.config();
+app.use(cors());
 
 // Middlewares.
 app.use(express.json());

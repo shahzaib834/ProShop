@@ -8,14 +8,13 @@ import {
   PRODUCT_DETAILS_SUCCESS,
   PRODUCT_DETAILS_FAIL,
 } from './types';
+import { BASE_URL } from '../../constants/config';
 
 export const listProducts = () => async (dispatch) => {
   try {
     dispatch({ type: PRODUCT_LIST_REQUEST });
 
-    const { data } = await axios.get(
-      'https://proshop8.herokuapp.com/api/products'
-    );
+    const { data } = await axios.get(`${BASE_URL}/products`);
 
     dispatch({ type: PRODUCT_LIST_SUCCESS, payload: data });
   } catch (error) {
@@ -27,9 +26,7 @@ export const ProductDetails = (id) => async (dispatch) => {
   try {
     dispatch({ type: PRODUCT_DETAILS_REQUEST });
 
-    const { data } = await axios.get(
-      `https://proshop8.herokuapp.com/api/products/${id}`
-    );
+    const { data } = await axios.get(`${BASE_URL}/products/${id}`);
 
     dispatch({ type: PRODUCT_DETAILS_SUCCESS, payload: data });
   } catch (error) {

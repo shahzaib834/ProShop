@@ -39,7 +39,7 @@ const ProductScreen = ({ history, match }) => {
         <Loader />
       ) : error ? (
         <Message>{error}</Message>
-      ) : (
+      ) : product ? (
         <Row>
           <Col md={6}>
             <Image src={product.image} alt={product.name} fluid />
@@ -124,6 +124,8 @@ const ProductScreen = ({ history, match }) => {
             </Card>
           </Col>
         </Row>
+      ) : (
+        <Message>{error}</Message>
       )}
     </>
   );
